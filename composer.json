@@ -1,0 +1,26 @@
+{
+ 	"name": "pecee/simple-router-saba-idea",
+ 	"description": "Simple router saba-idea project",
+ 	"keywords": [
+		"simple-router",
+		"php",
+		"php-simple-router"
+	],
+	"license": "MIT",
+	"type": "project",
+	"require": {
+		"php": ">=7.1",
+		"pecee/simple-router": "^5.0"
+	},
+	"require-dev": {
+
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+    "autoload": {
+      "psr-4": {
+        "SabaIdea\\": "app/"
+      }
+    }
+}

@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  php:
+    image: php:8.1-fpm-alpine
+    env_file:
+      - .env
+    ports:
+      - "8123:9000"
+
+  mysql:
+    image: mysql:5.7
+    env_file:
+      - .env
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: mydatabase
